@@ -1,0 +1,16 @@
+#include <mega128.h>
+#include <delay.h>
+
+void main(void)
+{
+PORTA=0x00;
+DDRA=0xFF;
+while (1)
+      {
+        PORTA=0xAA;
+        delay_ms(500);
+        PORTA=0x55;
+        delay_ms(500);
+
+      }
+}
